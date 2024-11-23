@@ -55,6 +55,7 @@ X <- matrix(runif(n*T, 3,5.5),nrow= n,T)
 M <- sweep(X, 2, a_t, "*") + matrix(rnorm(n*T, 0,0.5),nrow= n,T)
 Y <- sweep(X, 2, c_t, "*") + sweep(M, 2, b_t, "*") + matrix(rnorm(n*T, 0, 0.5),nrow= n,T)
 
+
 # begin to fit model
 data1 <- list (n=n,T=T,X=X,M=M,Y=Y, a0=1, b0=0.5, c0=3)
-fit1<-stan(file= "E:/phd申请/Research Proposal/timestamp.stan",data=data1)
+fit1<-stan(file= "timestamp.stan",data=data1)
