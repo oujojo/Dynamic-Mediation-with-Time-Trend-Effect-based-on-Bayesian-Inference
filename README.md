@@ -15,8 +15,10 @@ The data that we can observe combines X(Dependent Variable), Y(Independent Varia
    - meaning
     Maybe we want to see if some effect increases or decreases with time goes by. It's a dynamic process. Previous models think the effect of a/b/c is a autoregression and test with AR(1) and AR(p) models.
 
-3. time trend in the b path
+2. time trend in the b path
    
-4. time trend in the both a and b path
+3. time trend in the both a and b path
 
+
+But the stan file of model still needs to be modified...
 
