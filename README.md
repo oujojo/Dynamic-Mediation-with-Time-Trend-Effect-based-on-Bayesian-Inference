@@ -1,6 +1,5 @@
 # Dynamic Mediation with Time Trend Effect based on Bayesian Inference
-This project propose a dynamic mediation effect of
-is based on a rstan package to do parameter estimate.
+This project propose a dynamic mediation effect with time trend effect and is based on a rstan package to do parameter estimate.
 The data that we can observe combines X(Dependent Variable), Y(Independent Variable), M(Mediator). And the rest of coeffients need to be estimated.
 ## Three Models
 1. time trend in the a path
@@ -13,8 +12,11 @@ The data that we can observe combines X(Dependent Variable), Y(Independent Varia
 
     i means every participant, t means every timestamp. The effect of a/b/c just have variances from time while M and Y have variances from both time and individuals. We first generate data with R and then establish a model in a stan file. And this model contains two layers of loops.
 
-2. time trend in the b path
+   - meaning
+    Maybe we want to see if some effect increases or decreases with time goes by. It's a dynamic process. Previous models think the effect of a/b/c is a autoregression and test with AR(1) and AR(p) models.
+
+3. time trend in the b path
    
-3. time trend in the both a and b path
+4. time trend in the both a and b path
 
 
